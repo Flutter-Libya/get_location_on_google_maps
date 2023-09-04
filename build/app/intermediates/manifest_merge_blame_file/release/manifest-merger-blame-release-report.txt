@@ -1,0 +1,169 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.gps_task_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:2:5-78
+11-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:2:22-76
+12    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+12-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:3:5-84
+12-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:3:22-82
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:4:5-66
+13-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:4:22-64
+14    <!-- Include required permissions for Google Maps API to run. -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
+15-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:22-76
+16
+17    <uses-feature
+17-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+18        android:glEsVersion="0x00020000"
+18-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+19        android:required="true" />
+19-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+20
+21    <queries>
+21-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:30:5-34:15
+22
+23        <!-- Needs to be explicitly declared on Android R+ -->
+24        <package android:name="com.google.android.apps.maps" />
+24-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+24-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+25    </queries>
+26
+27    <permission
+27-->[androidx.core:core:1.9.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+28        android:name="com.example.gps_task_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.9.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.9.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="com.example.gps_task_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.9.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.9.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+32
+33    <application
+34        android:name="android.app.Application"
+34-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:7:9-42
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.9.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+36        android:icon="@mipmap/ic_launcher"
+36-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:8:9-43
+37        android:label="gps_task_app" >
+37-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:6:9-37
+38        <meta-data
+38-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:9:9-123
+39            android:name="com.google.android.geo.API_KEY"
+39-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:9:20-65
+40            android:value="AIzaSyBjT0Um92nHtrnZLeWjLLf9nwjUvyFfMac" />
+40-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:9:66-121
+41
+42        <activity
+42-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:10:9-30:20
+43            android:name="com.example.gps_task_app.MainActivity"
+43-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:11:13-41
+44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+44-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:15:13-163
+45            android:exported="true"
+45-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:12:13-36
+46            android:hardwareAccelerated="true"
+46-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:16:13-47
+47            android:launchMode="singleTop"
+47-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:13:13-43
+48            android:theme="@style/LaunchTheme"
+48-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:14:13-47
+49            android:windowSoftInputMode="adjustResize" >
+49-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:17:13-55
+50
+51            <!--
+52                 Specifies an Android theme to apply to this Activity as soon as
+53                 the Android process has started. This theme is visible to the user
+54                 while the Flutter UI initializes. After that, this theme continues
+55                 to determine the Window background behind the Flutter UI.
+56            -->
+57            <meta-data
+57-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:22:13-25:17
+58                android:name="io.flutter.embedding.android.NormalTheme"
+58-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:23:15-70
+59                android:resource="@style/NormalTheme" />
+59-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:24:15-52
+60
+61            <intent-filter>
+61-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:26:13-29:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:27:17-68
+62-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:27:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:28:17-76
+64-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:28:27-74
+65            </intent-filter>
+66        </activity>
+67        <!--
+68             Don't delete the meta-data below.
+69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+70        -->
+71        <meta-data
+71-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:33:9-35:33
+72            android:name="flutterEmbedding"
+72-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:34:13-44
+73            android:value="2" />
+73-->/Users/ahmedabufayed/Downloads/gps_task_app-master/android/app/src/main/AndroidManifest.xml:35:13-30
+74
+75        <service
+75-->[:geolocator_android] /Users/ahmedabufayed/Downloads/gps_task_app-master/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:56
+76            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+76-->[:geolocator_android] /Users/ahmedabufayed/Downloads/gps_task_app-master/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-77
+77            android:enabled="true"
+77-->[:geolocator_android] /Users/ahmedabufayed/Downloads/gps_task_app-master/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-35
+78            android:exported="false"
+78-->[:geolocator_android] /Users/ahmedabufayed/Downloads/gps_task_app-master/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+79            android:foregroundServiceType="location" />
+79-->[:geolocator_android] /Users/ahmedabufayed/Downloads/gps_task_app-master/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-53
+80
+81        <uses-library
+81-->[androidx.window:window:1.0.0-beta04] /Users/ahmedabufayed/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+82            android:name="androidx.window.extensions"
+82-->[androidx.window:window:1.0.0-beta04] /Users/ahmedabufayed/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0-beta04] /Users/ahmedabufayed/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+84        <uses-library
+84-->[androidx.window:window:1.0.0-beta04] /Users/ahmedabufayed/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+85            android:name="androidx.window.sidecar"
+85-->[androidx.window:window:1.0.0-beta04] /Users/ahmedabufayed/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+86            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+86-->[androidx.window:window:1.0.0-beta04] /Users/ahmedabufayed/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+87        <uses-library
+87-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+88            android:name="org.apache.http.legacy"
+88-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+89            android:required="false" />
+89-->[com.google.android.gms:play-services-maps:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/d7f7973f000d5c8945a05a4db1417b66/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+90
+91        <activity
+91-->[com.google.android.gms:play-services-base:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/781e5567158e59d38ee2b89930f9808b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+92-->[com.google.android.gms:play-services-base:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/781e5567158e59d38ee2b89930f9808b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+93            android:exported="false"
+93-->[com.google.android.gms:play-services-base:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/781e5567158e59d38ee2b89930f9808b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.android.gms:play-services-base:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/781e5567158e59d38ee2b89930f9808b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+95
+96        <meta-data
+96-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/58aa1384bde170d075503b845cfcf44c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+97            android:name="com.google.android.gms.version"
+97-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/58aa1384bde170d075503b845cfcf44c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+98            android:value="@integer/google_play_services_version" />
+98-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ahmedabufayed/.gradle/caches/transforms-3/58aa1384bde170d075503b845cfcf44c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+99    </application>
+100
+101</manifest>

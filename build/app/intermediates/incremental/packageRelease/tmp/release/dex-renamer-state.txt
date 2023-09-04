@@ -1,0 +1,4 @@
+#Mon Sep 04 10:36:43 EET 2023
+base.0=/Users/ahmedabufayed/Downloads/gps_task_app-master/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
