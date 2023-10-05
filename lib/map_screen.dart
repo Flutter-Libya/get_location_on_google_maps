@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:gps_task_app/google_map_view_model.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapScreen extends StatefulWidget {
   const MapScreen({super.key});
@@ -11,8 +11,8 @@ class MapScreen extends StatefulWidget {
 }
 
 class _MapScreenState extends State<MapScreen> {
+    late final Future<LatLng> _mapLoadedFuture;
   final viewModel = GoogleMapViewModel();
-  late final Future<LatLng> _mapLoadedFuture;
   String? cityName;
 
   @override
@@ -51,7 +51,7 @@ class _MapScreenState extends State<MapScreen> {
       body: Column(
         children: [
           Expanded(
-            flex: 1, // Take one-third of the available vertical space
+            flex: 1,
             child: FutureBuilder(
               future: _mapLoadedFuture,
               builder: (context, snapshot) {
@@ -81,7 +81,7 @@ class _MapScreenState extends State<MapScreen> {
             ),
           ),
           Expanded(
-            flex: 2, // Take two-thirds of the available vertical space
+            flex: 2,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -89,8 +89,8 @@ class _MapScreenState extends State<MapScreen> {
                   'You are located in ${cityName ?? "Unknown City"}',
                   style: TextStyle(fontSize: 24),
                 ),
-                SizedBox(height: 16), // Add empty space below the text
-                // Add any additional widgets here
+                SizedBox(height: 16),
+               
               ],
             ),
           ),
